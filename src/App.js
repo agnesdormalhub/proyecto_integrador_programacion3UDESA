@@ -15,7 +15,7 @@ export default class App extends Component {
   }
 componentDidMount(){
   
-    fetch('https://randomuser.me/api/?results=3&inc=name,login')
+    fetch('https://randomuser.me/api/')
     .then(result=>result.json())
     .then(data=> {
       this.setState({items:data.results});
@@ -30,7 +30,7 @@ componentDidMount(){
 
   agregarTarjeta() {
 
-    fetch('https://randomuser.me/api/?inc=name,login')
+    fetch('https://randomuser.me/api/')
     .then(result=>result.json())
     .then(data=> {
       this.state.items.push(data.results[0]);
@@ -57,15 +57,30 @@ componentDidMount(){
   render(){
   return (
     <div className="App">
-      <div>Id item a generar:{this.state.contador}</div>
-      <button onClick={this.agregarTarjeta.bind(this)}>Agregar</button>
-      <button onClick={this.borrarTarjetas.bind(this)}>Borrar todo!</button>
+      <div class="botones">
+        <button class="agregar" onClick={this.agregarTarjeta.bind(this)}>Agregar</button>
+        <button class="borrar" onClick={this.borrarTarjetas.bind(this)}>Borrar todo!</button>
+      </div>
       {
         this.state.items.map((item)=> {
-          return  <Child onDelete={this.borrarTarjeta.bind(this)}
-           key={item.login.uuid} id={item.login.uuid}
+          return <Child onDelete={this.borrarTarjeta.bind(this)}
+            key={item.login.uuid}
+            id={item.login.uuid}
             name={item.name.first}
-            lastname={item.name.last}/>
+            lastname={item.name.last}
+            image={item.picture.medium}
+            email={item.email}
+            birthdate={item.dob.date}
+            age={item.dob.age}
+            street={item.location.street.name}
+            street_number={item.location.street.number}
+            city={item.location.city}
+            state={item.location.state}
+            country={item.location.country}
+            postcode={item.location.postcode}
+            phone={item.phone}
+            registered={item.registered.date}
+              />
         }
         )
       }

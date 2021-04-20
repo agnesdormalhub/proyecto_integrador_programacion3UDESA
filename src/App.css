@@ -14,7 +14,7 @@
   }
   
   .App-header {
-    background-color: #282c34;
+    background-color: #b4b7bd;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,11 +41,58 @@
     width: 300px;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
+    border-width: 1px;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
-    background-color: lightgray;
-  
-  
+    border-radius: 15px;
+    background-color: #F8C6BB;
+  }
+
+  .boton{
+    width: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(224, 213, 213);
+
+  }
+
+  body{
+    background-color: white);
+    
+  }
+
+  .agregar{
+    width: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(224, 213, 213);
+
+  }
+
+  .borrar{
+    width: 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+
+  }
+
+  .container{
+    display: inline-flex;
+  }
+
+  .botones{
+    width: 100%
   }
