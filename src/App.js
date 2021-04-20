@@ -15,7 +15,7 @@ export default class App extends Component {
   }
 componentDidMount(){
   
-    fetch('https://randomuser.me/api/')
+    fetch('https://randomuser.me/api/?results=20 ')
     .then(result=>result.json())
     .then(data=> {
       this.setState({items:data.results});
