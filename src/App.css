@@ -1,98 +1,19 @@
-.App {
-    text-align: center;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #b4b7bd;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .Tarjeta {
-    width: 300px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(224, 213, 213);
-  }
+.eventos-container {
+	background-color: #f8f8f8;
+	padding: 15px;
+}
 
-  .boton{
-    width: 100px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(224, 213, 213);
+.iconos-tarjeta {
+	margin: 10px 0px 0px;
+	padding: 10px 0px 0px; 
+	padding-left: 25%;
+}
 
-  }
-
-  body{
-    background-color: white);
-    
-  }
-
-  .agregar{
-    width: 100px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(224, 213, 213);
-
-  }
-
-  .borrar{
-    width: 100px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-
-  }
-
-  .container{
-    display: inline-flex;
-  }
-
-  .botones{
-    width: 100%
-  }
+.header {
+	width: auto;
+	background-color: bisque;
+	height: 100px;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 35px;
+}
