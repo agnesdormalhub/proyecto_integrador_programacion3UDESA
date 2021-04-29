@@ -63,9 +63,9 @@ class Child extends Component {
                             </ul>
                         <div style={{display: this.state.display}} icon={{icon: this.state.icon}}> 
                             <ul>
-                                <li>{this.props.address.street.name} {this.props.address.street.number}</li>
+                                <li>Address: {this.props.address.street.name} {this.props.address.street.number}</li>
                                 <li>{this.props.address.state}/{this.props.address.country}</li>
-                                <li>{this.props.phone}</li>
+                                <li>Tel: {this.props.phone}</li>
                                 <li>Member since: <Moment format="DD/MM/YYYY">{this.props.registered}</Moment></li>
                             </ul>
                         </div>
