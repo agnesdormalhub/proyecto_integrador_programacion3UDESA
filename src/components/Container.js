@@ -36,6 +36,8 @@ class Container extends Component {
         })
     }
 
+    
+
     agregarTarjetas = () => {
         let valor = document.querySelector(".inputAdd").value 
         fetch ("https://randomuser.me/api/?results=" + valor)
@@ -101,6 +103,7 @@ class Container extends Component {
         }
 
     }
+
 
     render () {
         return(
